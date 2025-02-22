@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Duel - Submit Task</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Task Duel</a>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="submit-task.html" class="active">Submit Task</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <h1>Submit Task</h1>
+        <form id="task-form" class="task-form">
+            <div class="form-group">
+                <label for="task-name">Task Name</label>
+                <input type="text" id="task-name" name="task-name" required>
+            </div>
+            <div class="form-group">
+                <label for="task-description">Description</label>
+                <textarea id="task-description" name="task-description" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="task-date">Completion Date</label>
+                <input type="date" id="task-date" name="task-date" required>
+            </div>
+            <div class="form-group">
+                <label for="task-proof">Proof of Completion</label>
+                <input type="file" id="task-proof" name="task-proof" accept="image/*">
+            </div>
+            <button type="submit" class="btn-submit">Submit Task</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Task Duel. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
